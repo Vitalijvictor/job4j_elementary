@@ -3,8 +3,7 @@ package ru.job4j;
 public class Info {
 
 	public static void main(String[] args) {
-		// TODO Автоматически созданная заглушка метода
-
+		System.out.println("01/01/1976");
 	}
 
 }
