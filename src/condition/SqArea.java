@@ -8,9 +8,10 @@ public class SqArea {
         double rsl = s;
         return rsl;
     }
+    
 
     public static void main(String[] args) {
-        double result1 = SqArea.square(6, 2);
+        double result1 = SqArea.square(24, 2);
         System.out.println(" p = 6, k = 2, s = 1, real = " + result1);
     }
 }
