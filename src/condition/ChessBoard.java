@@ -15,7 +15,7 @@ public class ChessBoard {
     } 
     
     public static int way(int x1, int y1, int x2, int y2) {
-    	
+    	// some small change
     	/*
     	int rsl = 0;
     	if ((x1 < 0 || x1 > 7) 
