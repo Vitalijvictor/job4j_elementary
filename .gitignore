@@ -14,6 +14,10 @@ hs_err_pid*
 .idea
 *.iml
 
+.classpath
+.project
+checkstyle.out.xml
+
 target
 
 out
