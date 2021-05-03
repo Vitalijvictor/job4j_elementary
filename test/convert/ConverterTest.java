@@ -10,7 +10,7 @@ public class ConverterTest {
     public void whenConvert140RblThen2Euro() {
         int in = 140;
         int expected = 2;
-        int out = (int) Converter.rubleToEuro(in);
+        double out = Converter.rubleToEuro(in);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -18,7 +18,7 @@ public class ConverterTest {
     public void whenConvert180RblThen3Dlr() {
     	int in = 180;
         int expected = 3;
-        int out = (int) Converter.rubleToDollar(in);
+        double out = Converter.rubleToDollar(in);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
