@@ -10,6 +10,7 @@ package Loop;
 	        		}
 	        	else {
 	        		prime = true;
+	        		break;
 				}
 					return prime; 
 	    }
