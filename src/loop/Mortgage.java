@@ -1,24 +1,14 @@
 package loop;
 
 public class Mortgage {
-    public static int year(int amount, int salary, double percent) {
-        int year = 0;
-        double dAmount = (double) amount;
-        double dSalary = (double) salary;
-        
+    public static int year(double amount, double salary, double percent) {
+    	int year = 0;
         percent = percent / 100;
-        
-        while (dAmount > 0) {
-        	dAmount = dAmount + (dAmount * percent) - dSalary;   
-        	System.out.println(dAmount);
+        while (amount > 0) {
+        	amount = amount + (amount * percent) - salary;   
+        	System.out.println(amount);
         	year++;        	
         }
         return year;
     }
-    
-
-    
-    /*public static void main(String[] args) {
-		System.out.println(Mortgage.year(100, 70, 50));
-	}*/
 }
