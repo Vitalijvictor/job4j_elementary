@@ -1,3 +1,4 @@
+//ArrayLoop version2
 package array;
 
 public class ArrayLoop {
@@ -6,6 +7,6 @@ public class ArrayLoop {
 		for (int index = 0; index < numbers.length; index++) {
 		int	y = index * 2 + 3;
 		System.out.println(y);
-	}	
-}
+		}	
+	}
 }
