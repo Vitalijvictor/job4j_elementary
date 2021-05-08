@@ -6,7 +6,7 @@ import org.junit.Test;
 public class DummyBotTest {
     @Test
     public void whenGreetBot() {
-        String in = "Привет, Бот.";
+        String in = "Привет, Бот";
         String result = DummyBot.answer(in);
         String expected = "Привет, умник.";
         Assert.assertEquals(expected, result);

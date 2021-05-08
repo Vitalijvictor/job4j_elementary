@@ -1,9 +1,6 @@
 package ru.job4j;
 
-
-
-public class Calculator {
-    
+public class Calculator {    
     public static void plus(int first, int second) {
         int result = first + second;
         System.out.println(result);

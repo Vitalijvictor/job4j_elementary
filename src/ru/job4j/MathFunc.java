@@ -4,10 +4,11 @@ public class MathFunc { //если метод ,,void,, то он ,,пустой,
 
     public static int func1(int x) {
         int y = x * x + 1;
+        return y;
     }
 
     public static void func2(int x) {
-        int y = 1 / x;
+        int y = 1 / x;        
     }
 
     public static void main(String[] args) {

@@ -26,9 +26,9 @@ public class PointEqTest {
         Assert.assertEquals(expected, out);
     }
 	@Test
-	public void when88to88thenTrue() {
-        boolean expected = true;
-        int x1 = 8;
+	public void when18to88thenFalse() {
+        boolean expected = false;
+        int x1 = 1;
         int y1 = 8;
         int x2 = 8;
         int y2 = 8;

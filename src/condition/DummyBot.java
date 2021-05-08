@@ -1,7 +1,5 @@
 package condition;
 
-
-
 public class DummyBot {
 
     public static String answer(String question) {
@@ -14,7 +12,6 @@ public class DummyBot {
         }
         return rsl;
     }
-
 
     public static void main(String[] args) {
         String rsl = DummyBot.answer("Привет, Бот");

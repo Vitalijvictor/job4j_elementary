@@ -1,7 +1,5 @@
 package condition;
 
-
-
 public class LogicNot {
 
     public static boolean isEven(int num) {
