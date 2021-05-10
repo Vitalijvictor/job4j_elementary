@@ -5,10 +5,11 @@ public class ArrayChar {
     public static boolean startsWith(char[] word, char[] pref) {
         boolean result = true;
         for (int i = 0; i < word.length; i++) {
-        	if (word.length != pref.length) { 
+        	if (word[i] != pref[i]) { 
         	result = false;
-        }        	
-        return result;
-    }
-    }
+        	break;
+        	}
+        }
+        	return result;	    
+    }   
 }
