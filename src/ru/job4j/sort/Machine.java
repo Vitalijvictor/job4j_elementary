@@ -9,7 +9,11 @@ public class Machine {
         int[] coins = {10, 5, 2, 1};
         int[] rsl = new int[100];
         int size = 0;
-       // for-each ()
+        for (int i = 0; i < coins.length; i++){
+            if (price > money){
+                coins[i] = size++;
+            }
+        }
         return Arrays.copyOf(rsl, size);
     }
 }
