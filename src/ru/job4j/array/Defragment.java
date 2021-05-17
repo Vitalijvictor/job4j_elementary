@@ -1,15 +1,14 @@
 package ru.job4j.array;
 
-import static org.junit.Assert.assertArrayEquals;
-
 public class Defragment {
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index; /* указатель на null ячейку. */
-                for (int notNullIndex = 0; notNullIndex < array.length; notNullIndex++) {
-                	if (point == 0) {
-                		array = SwitchArray.swap[](array, index, notNullIndex);                        
+                for (int notNullIndex = point + 1; notNullIndex < array.length; notNullIndex++) {
+                	if ((array[notNullIndex] != null)) {
+                		SwitchArray.swap(array[notNullIndex], index, notNullIndex);
+                		break;
                 	}
                 }
             }
