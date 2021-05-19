@@ -7,7 +7,10 @@ public class Defragment {
                 int point = index; /* указатель на null ячейку. */
                 for (int notNullIndex = point + 1; notNullIndex < array.length; notNullIndex++) {
                 	if ((array[notNullIndex] != null)) {
-                		SwitchArray.swap(array, index, notNullIndex);
+                        String temp = array[index];
+                        array[index] = array[notNullIndex];
+                        array[notNullIndex] = temp;
+
                 		break;
                 	}
                 }
