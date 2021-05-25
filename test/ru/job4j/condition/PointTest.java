@@ -8,7 +8,7 @@ import static java.lang.Math.sqrt;
 import ru.job4j.condition.Point;
 
 public class PointTest {
-    /*@Test
+    @Test
     public void when00to20then2() {
         int expected = 2;
         int x1 = 0;
@@ -50,13 +50,23 @@ public class PointTest {
         int y2 = 16;
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
-    }*/
+    }
 
     @Test
     public void whenA001AndB111 () {
         Point a = new Point(0, 0, 1);
         Point b = new Point(1, 1, 1);
         double dist = a.distance3d(b);
+        Assert.assertEquals(sqrt(2), dist, 0.01);
+        System.out.println(dist);
+
+    }
+
+    @Test
+    public void whenDistance2D () {
+        Point a = new Point(0, 0);
+        Point b = new Point(1, 1);
+        double dist = a.distance(b);
         Assert.assertEquals(sqrt(2), dist, 0.01);
         System.out.println(dist);
 
