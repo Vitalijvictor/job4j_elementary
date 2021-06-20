@@ -39,4 +39,11 @@ public class MachineTest {
         int[] expected = {10, 5, 2, 1};
         Assert.assertArrayEquals(expected, result);
     }
+
+    @Test(expected = RuntimeException.class)
+    public void whenInsufficientFunds() {
+        int money = 10;
+        int price = 32;
+        int[] result = Machine.change(money, price);
+    }
 }

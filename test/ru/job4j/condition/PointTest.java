@@ -53,7 +53,7 @@ public class PointTest {
     }
 
     @Test
-    public void whenA001AndB111 () {
+    public void whenA001AndB111() {
         Point a = new Point(0, 0, 1);
         Point b = new Point(1, 1, 1);
         double dist = a.distance3d(b);
@@ -63,7 +63,7 @@ public class PointTest {
     }
 
     @Test
-    public void whenDistance2D () {
+    public void whenDistance2D() {
         Point a = new Point(0, 0);
         Point b = new Point(1, 1);
         double dist = a.distance(b);
