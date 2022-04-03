@@ -9,7 +9,6 @@ public class Merge {
         int leftPoint = 0;
         int rightPoint = 0;
         int rslPoint = 0;
-        int mainIndex = 0;
         while (leftPoint + rightPoint != rsl.length) {
             if (leftPoint != left.length && rightPoint != right.length) {
                 rsl[rslPoint++] = left[leftPoint] < right[rightPoint] ? left[leftPoint++] : right[rightPoint++];

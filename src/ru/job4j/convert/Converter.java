@@ -12,6 +12,11 @@ public class Converter {
     	return value / 60;
     }
 
+    public static double rubleToPound(double value) {
+
+        return value / 80;
+    }
+
     public static void main(String[] args) {
     	double euro = Converter.rubleToEuro(140);
         System.out.println("140 rubles are " + euro + " euro.");

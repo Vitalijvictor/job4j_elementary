@@ -23,4 +23,12 @@ public class ConverterTest {
         double out = Converter.rubleToDollar(in);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void whenConvert240RblThen3Pound() {
+        int in = 240;
+        int expected = 3;
+        double out = Converter.rubleToPound(in);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
